@@ -1,0 +1,7 @@
+[
+    {
+        "alert": "Low Positive Prediction Rate",
+        "severity": "Medium",
+        "details": "Positive prediction rate = 0.19"
+    }
+]

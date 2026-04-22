@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI Investment Advisor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">AI Investment Advisor</div>
+    <div class="nav-right">
+        <span>Powered by MAICA Compliance</span>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main-container">
+
+    <!-- FORM -->
+    <div class="card">
+        <h2>Investment Profile</h2>
+
+        <div class="form-grid">
+            <input id="age" placeholder="Age">
+            <input id="income" placeholder="Annual Income">
+            <input id="amount" placeholder="Investment Amount">
+
+            <select id="risk">
+                <option>Low</option>
+                <option selected>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+
+        <button class="primary-btn" onclick="getRecommendation()">
+            Generate Investment Plan
+        </button>
+    </div>
+
+    <!-- RESULT -->
+    <div class="card">
+        <h2>Recommended Portfolio</h2>
+        <div id="result">
+            <p class="placeholder">
+                Enter your details to generate an AI-powered investment strategy.
+            </p>
+        </div>
+    </div>
+
+    <!-- MARKET -->
+    <div class="card">
+        <h2>Today's Market Snapshot</h2>
+        <div id="market" class="market-grid"></div>
+    </div>
+
+</div>
+
+<!-- ================= CHAT ================= -->
+
+<div id="chatbot" class="chatbot-full">
+
+    <div class="chat-header-full">
+        <span>💬 AI Investment Assistant</span>
+        <button class="chat-close" onclick="closeChat()">✖</button>
+    </div>
+
+    <div id="chat-body" class="chat-body-full">
+        <p><b>Advisor:</b> Hey 👋 Tell me your income and investment amount — I’ll help you build a smart portfolio.</p>
+    </div>
+
+    <div class="chat-input-area-full">
+        <input id="chat-input" placeholder="Ask about investments...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<!-- OPEN BUTTON -->
+<button id="open-chat" onclick="openChat()">💬 Open Assistant</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

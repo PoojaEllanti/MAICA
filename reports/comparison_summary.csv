@@ -1,0 +1,6 @@
+Rule_ID,Manual_Audit,MAICA_Audit,Match
+R1,Pass,Pass,True
+R2,Warning,Warning,True
+R3,Warning,Warning,True
+R4,Pass,Pass,True
+R5,Pass,Pass,True

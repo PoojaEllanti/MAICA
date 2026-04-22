@@ -1,0 +1,79 @@
+{
+    "domain": "healthcare",
+    "regulation_rules": [
+        {
+            "rule_id": "R1",
+            "category": "Data Quality",
+            "description": "Dataset must not contain missing values",
+            "severity": "High"
+        },
+        {
+            "rule_id": "R2",
+            "category": "Fairness",
+            "description": "Model predictions should be fair across gender",
+            "severity": "High"
+        },
+        {
+            "rule_id": "R3",
+            "category": "Bias",
+            "description": "Sensitive attributes should not dominate predictions",
+            "severity": "Medium"
+        },
+        {
+            "rule_id": "R4",
+            "category": "Explainability",
+            "description": "Model decisions must be explainable",
+            "severity": "Medium"
+        },
+        {
+            "rule_id": "R5",
+            "category": "Privacy",
+            "description": "No direct personal identifiers should be used",
+            "severity": "High"
+        }
+    ],
+    "model_inspection": [
+        {
+            "check": "Missing Values",
+            "result": "Pass",
+            "details": "Missing values count: 0"
+        },
+        {
+            "check": "Gender Fairness",
+            "result": "Warning",
+            "details": "Prediction difference: 0.165"
+        },
+        {
+            "check": "Sensitive Attributes",
+            "result": "Warning",
+            "details": "Sensitive features found: ['race_Asian-Pac-Islander', 'race_Black', 'race_Other', 'race_White', 'sex_Male']"
+        }
+    ],
+    "runtime_monitoring": [
+        {
+            "alert": "Low Positive Prediction Rate",
+            "severity": "Medium",
+            "details": "Positive prediction rate = 0.19"
+        }
+    ],
+    "explainability": {
+        "method": "SHAP",
+        "samples_explained": 50,
+        "top_features": [
+            "age",
+            "fnlwgt",
+            "education-num",
+            "capital-gain",
+            "capital-loss",
+            "hours-per-week",
+            "workclass_Local-gov",
+            "workclass_Never-worked",
+            "workclass_Private",
+            "workclass_Self-emp-inc"
+        ]
+    },
+    "summary": {
+        "overall_compliance": "Partially Compliant",
+        "notes": "Automated auditing results for healthcare dataset."
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "check": "Missing Values",
+        "result": "Pass",
+        "details": "Missing values count: 0"
+    },
+    {
+        "check": "Gender Fairness",
+        "result": "Warning",
+        "details": "Prediction difference: 0.165"
+    },
+    {
+        "check": "Sensitive Attributes",
+        "result": "Warning",
+        "details": "Sensitive features found: ['race_Asian-Pac-Islander', 'race_Black', 'race_Other', 'race_White', 'sex_Male']"
+    }
+]

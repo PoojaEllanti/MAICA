@@ -1,0 +1,11 @@
+{
+    "dataset": "data/heart_disease_uci.csv",
+    "domain": "healthcare",
+    "sensitive_attributes_detected": [
+        "age",
+        "sex"
+    ],
+    "count": 2,
+    "security_status": "Warning",
+    "recommendation": "Apply access control and privacy protection"
+}

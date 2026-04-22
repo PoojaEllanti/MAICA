@@ -1,0 +1,32 @@
+[
+    {
+        "Rule_ID": "R1",
+        "Manual_Audit": "Pass",
+        "MAICA_Audit": "Pass",
+        "Match": true
+    },
+    {
+        "Rule_ID": "R2",
+        "Manual_Audit": "Warning",
+        "MAICA_Audit": "Warning",
+        "Match": true
+    },
+    {
+        "Rule_ID": "R3",
+        "Manual_Audit": "Warning",
+        "MAICA_Audit": "Warning",
+        "Match": true
+    },
+    {
+        "Rule_ID": "R4",
+        "Manual_Audit": "Pass",
+        "MAICA_Audit": "Pass",
+        "Match": true
+    },
+    {
+        "Rule_ID": "R5",
+        "Manual_Audit": "Pass",
+        "MAICA_Audit": "Pass",
+        "Match": true
+    }
+]

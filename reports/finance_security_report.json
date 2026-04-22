@@ -1,0 +1,10 @@
+{
+    "dataset": "data/adult_audit_data.csv",
+    "domain": "finance",
+    "sensitive_attributes_detected": [
+        "age"
+    ],
+    "count": 1,
+    "security_status": "Warning",
+    "recommendation": "Apply access control and privacy protection"
+}
